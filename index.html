@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>To-Do-List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+          body{
+                    background-color: #f4f4f4;
+                    font-family: Ariel, sans-serif;
+          }
+          .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+    font-style: italic;
+}
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+          
+</style>
+<body>       
+    <div class="container">  
+        <h1>To-Do-List</h1>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button onclick="addTask()">Submit Task</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
